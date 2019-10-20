@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Calculator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- donnot use real life beacuse use eval() function -->
+
+    <form id="myForm" name="mycalForm">
+
+        <!-- show all data in show input -->
+        <input type="text" name="show" id="show">
+         <!-- rest show input -->
+        <input type="button" id="rest" name="restValue" value="Rest" onclick="mycalForm.show.value=''">
+
+        <div id="layer">
+               <!-- use onclick  event get the value  -->
+            <input type="button" name="" id="showData" value="1" onclick="mycalForm.show.value +='1'">
+            <input type="button" name="" id="showData" value="2" onclick="mycalForm.show.value +='2'">
+            <input type="button" name="" id="showData" value="3" onclick="mycalForm.show.value +='3'">
+            <input type="button" name="" id="showData" value="%" onclick="mycalForm.show.value +='%'">
+        </div>
+
+        <div id="layer">
+
+            <!-- use onclick  event get the value  -->
+            <input type="button" name="" id="showData" value="4" onclick="mycalForm.show.value +='4'">
+            <input type="button" name="" id="showData" value="5" onclick="mycalForm.show.value +='5'">
+            <input type="button" name="" id="showData" value="6" onclick="mycalForm.show.value +='6'">
+            <input type="button" name="" id="showData" value="*" onclick="mycalForm.show.value +='*'">
+        </div>
+
+        <div id="layer">
+            <input type="button" name="" id="showData" value="7" onclick="mycalForm.show.value +='7'">
+            <input type="button" name="" id="showData" value="8" onclick="mycalForm.show.value +='8'">
+            <input type="button" name="" id="showData" value="9" onclick="mycalForm.show.value +='9'">
+            <input type="button" name="" id="showData" value="/" onclick="mycalForm.show.value +='/'">
+        </div>
+
+        <div id="layer">
+
+            <!-- use onclick  event get the value  -->
+            <input type="button" name="" id="showData" value="+" onclick="mycalForm.show.value +='+'">
+            <input type="button" name="" id="showData" value="0" onclick="mycalForm.show.value +='0'">
+            <input type="button" name="" id="showData" value="-" onclick="mycalForm.show.value +='-'">
+            
+            <!-- magic here use the eval() method  -->
+            
+            <input type="button" name="" id="showData" value="=" onclick="mycalForm.show.value =eval(mycalForm.show.value)">
+       
+        </div>
+    </form>
+</body>
+
+</html>

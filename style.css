@@ -1,0 +1,38 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 800;
+    background-color: #add8e64f;
+}
+
+#myForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50%);
+    display: grid;
+}
+
+#layer > input[type="button"]{
+    padding: 30px;
+    border: none;
+    margin: 1px;
+    width: 80px;
+    background-color: #673AB7;
+    color: white;
+}
+
+input[type="text"]{
+    padding: 20px 10px;
+    border: none;
+    background: rgb(241, 150, 241);
+}
+
+#rest{
+    background-color: black;
+    border: none;
+    padding: 10px 10px;
+    margin: 5px 0;
+    color: white;
+}
